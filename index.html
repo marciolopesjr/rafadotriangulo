@@ -3,11 +3,17 @@
    <head>
       <meta charset='utf-8'>
       <meta name='viewport' content='width=device-width, initial-scale=1'>
-      <title>Snippet - BBBootstrap</title>
+      <title>Rafa do Triângulo</title>
       <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet'>
-      <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-      <style>::-webkit-scrollbar {
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
+      <style>
+         
+         ::-webkit-scrollbar {
          width: 8px;
          }
          /* Track */
@@ -26,14 +32,22 @@
          padding: 0
          }
          body {
-         background-color: #000
+         /*background-color: #F08080;*/
+         background-image: url("./assets/background.jpg");
+         background-position: center;
+         font-family: 'Montserrat', sans-serif;
+         width: auto;
+         height: auto;
+         /*background-size: cover;*/
          }
          .card {
          width: 350px;
-         background-color: #efefef;
+         background-color: #c9f4ff00;
          border: none;
          cursor: pointer;
          transition: all 0.5s;
+         border-style: solid;
+         border-color: #fff;
          }
          .image img {
          transition: all 0.5s;
@@ -41,22 +55,28 @@
          transform: scale(1.5)
          }
          .card:hover .image img {
-         transform: scale(1.5)
+         transform: scale(1.5);
+         border-color: #a4f2fe;
+         background-color: #a4f2fe;
          }
          .btn {
-         height: 140px;
-         width: 140px;
-         border-radius: 50%
+         height: 180px;
+         width: 180px;
+         border-radius: 50%;
+         background-color: #ffffff;
+         border-color: #ffffff;
+         background-image: url(back.svg);
          }
          .name {
+         text-align: center;
          font-size: 22px;
          font-weight: bold;
-         color: #000;
-         text-align: center;
+         color: rgb(255, 255, 255);
          }
          .idd {
+         color: #fff;
          font-size: 14px;
-         font-weight: 600
+         font-weight: 700
          }
          .idd1 {
          font-size: 12px
@@ -68,20 +88,34 @@
          .follow {
          font-size: 22px;
          font-weight: bold;
-         color: #000000
+         color: #ffffff
          }
          .btn1 {
          height: 40px;
-         width: 150px;
-         border: none;
-         background-color: #000;
-         color: #aeaeae;
+         width: 300px;
+         border-color: white;
+         background-color: #21252900;
+         color: #ffffff;
          font-size: 15px;
-         border-radius: 8px
+         border-radius: 13px
+         }
+         .btn2 {
+         height: 60px;
+         width: 300px;
+         border-color: white;
+         background-color: #21252900;
+         color: #ffffff;
+         font-size: 15px;
+         border-radius: 13px
+         }
+         .subtitle {
+         text-align: center;
+         font-size: 15px;
+         color: rgb(255, 255, 255);
          }
          .text span {
          font-size: 13px;
-         color: #545454;
+         color: #ffffff;
          font-weight: 500
          }
          .icons i {
@@ -92,11 +126,11 @@
          }
          .join {
          font-size: 14px;
-         color: #a0a0a0;
          font-weight: bold
          }
          .date {
-         background-color: #ccc
+         background-color:#ffffff96;
+         text-align: center
          }
       </style>
    </head>
@@ -104,15 +138,17 @@
       <div class="container mt-4 mb-4 p-3 d-flex justify-content-center">
          <div class="card p-4">
             <div class=" image d-flex flex-column justify-content-center align-items-center">
-               <button class="btn btn-secondary"> <img src="./assets/profile.jpg" height="100" width="100" /></button> <span class="name mt-3">Rafael Machado da Rosa Corrêa</span>
+               <button class="btn"> <img src="assets/profile_rafadotriangulo.png" height="100" width="100" /></button> <span class="name mt-3">Rafael Machado da Rosa Corrêa</span> 
+               <div class="d-flex flex-row justify-content-center align-items-center mt-3"><span class="subtitle">Presidente da câmara de vereadores</span> </div><span class="idd">Tramandaí - 2023</span> 
                <div class="d-flex flex-row justify-content-center align-items-center gap-2"> </div>
-               <div class="d-flex flex-row justify-content-center align-items-center mt-3"><span class="follow">Um pouco sobre mim</span> </div>
-               <div class="text mt-3"> <span>Olá!, eu sou o Rafa do Triãngulo e atualmente sou o presidente da câmara de vereadores de Tramandaí em 2023. Tenho formação em Comércio Exterior, sou pós-graduado em administração estratégica e pai do Giuseppe. Meu papel é liderar os trabalhos legislativos e trabalhar em conjunto com os demais vereadores para garantir o bom funcionamento da administração pública na nossa cidade. Com minha experiência, busco melhorar a infraestrutura, economia e qualidade de vida em Tramandaí.</span> </div>
-               <div class=" d-flex mt-2"> <button class="btn1 btn-dark">Whatsapp <span><i class="fa fa-whatsapp"></i></span></button> </div>
-               <div class=" d-flex mt-2"> <button class="btn1 btn-dark">Facebook <span><i class="fa fa-facebook-f"></i></span></button> </div>
-               <div class=" d-flex mt-2"> <button class="btn1 btn-dark">Instagram <span><i class="fa fa-instagram"></i></span></button> </div>
-               <div class=" d-flex mt-2"> <button class="btn1 btn-dark">Uber <span><i class="fa fa-car"></i></span></button> </div>
-               <div class=" px-2 rounded mt-4 date "> <span class="join">xxxxxxx</span> </div>
+               <div class="text mt-3"> <span></span></div>
+               <div class=" d-flex rounded mt-2"> <a href="about-me.html"><button class="btn1 btn-dark" href="#" role="button"><i class="fa fa-user-tie"></i>  Perfil Profissional<span></span></button> </a> </div>
+               <div class=" d-flex mt-2"> <a href="https://goo.gl/maps/zsjNDXWjxCHpjDcG6"><button class="btn2 btn-dark"><i class="fa-solid fa-gavel"></i> Projetos de leis e emendas impositivas <span></span></button></a> </div>
+               <div class=" d-flex mt-2"> <a href="https://www.instagram.com/fisioalesfsoares/"><button class="btn1 btn-dark"><i class="fa-brands fa-instagram"></i> Instagram <span></span></button></a> </div>
+               <div class=" d-flex mt-2"> <a href="https://www.instagram.com/fisioalesfsoares/"><button class="btn1 btn-dark"><i class="fa-brands fa-facebook"></i> Facebook <span></span></button></a> </div>
+               <div class=" d-flex mt-2"> <a href="https://wa.me/5551985748882?text=Ol%C3%A1%21"><button class="btn1 btn-dark"><i class="fa-brands fa-whatsapp"></i> Whatsapp<span></span></button></a> </div>
+               <div class=" d-flex mt-2"> <a href=""><button class="btn1 btn-dark"><i class="fa-brands fa-youtube"></i> Youtube<span></span></button> </a></div>
+               <div class=" px-2 rounded mt-4 date "> <span class="join"></span> </div>
             </div>
          </div>
       </div>
